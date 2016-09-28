@@ -34,6 +34,12 @@ select new {Album_Title = x.Title,
 			Count = x.Tracks.Count(),
 			TotalUnitPrice = x.Tracks.Sum(y => y.UnitPrice)}
 
+from x in Albums
+orderby x.Title ascending
+where x.Tracks.Count() > 0
+select new {Album_Title = x.Title,
+			Count = x.Tracks.Count(),
+			}
 		
 // Averages a specific field or expression that you might need to use a delegate
 from x in Albums
