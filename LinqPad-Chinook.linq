@@ -12,7 +12,7 @@
 // fROM Child to Parent
 from x in Customers
 where x.SupportRepIdEmployee.FirstName.Equals("Jane") && x.SupportRepIdEmployee.LastName.Equals("Peacock")
-select new {Name = x.LastName + ", " + x.FirstName,
+select new CheckCustomer {Name = x.LastName + ", " + x.FirstName,
 			City = x.City,  
 			State = x.State, 
 			Phone = x.Phone, 
