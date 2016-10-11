@@ -1,4 +1,4 @@
-<Query Kind="Statements">
+<Query Kind="Expression">
   <Connection>
     <ID>6f927bd0-d320-4c6c-a973-1ab7f1f6e543</ID>
     <Persist>true</Persist>
